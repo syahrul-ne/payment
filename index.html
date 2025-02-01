@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | SyahrulNewEraa </title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Premium Payment Gateway for secure transactions - SyahrulNewEraa">
+    <meta name="keywords" content="payment DANA, Gopay, Qriss">
+    <meta name="author" content="SyahrulNewEraa">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Payment | SyahrulNewEraa</h1>
+        </div>
+
+        <div class="warning">
+            <i class="fas fa-shield-alt"></i>
+            ALL TRANSACTION NO REFF
+            <i class="fas fa-shield-alt"></i>
+        </div>
+
+        <div class="payment-grid">
+            <!-- DANA -->
+            <div class="payment-method" data-method="dana">
+                <div class="payment-header">
+                    <div class="payment-logo">
+                        <img src="https://raw.githubusercontent.com/Muhammadabid7/ciee-ekhem/refs/heads/main/images.jpeg" 
+                             alt="Dana" 
+                             loading="lazy"
+                             style="background-color: #fff; padding: 2px;">
+                    </div>
+                    <div class="payment-info">
+                        <h3>DANA</h3>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <p>0895-4225-40345</p>
+                    <p>A/N Siti Syafaatun </p>
+                </div>
+                <div class="status-badge ready">
+                    <i class="fas fa-check-circle"></i> READY
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('0895-4225-40345')">
+                    <i class="far fa-copy"></i> Copy Number
+                </button>
+            </div>
+
+            <!-- GOPAY -->
+            <div class="payment-method" data-method="gopay">
+                <div class="payment-header">
+                    <div class="payment-logo">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="payment-info">
+                        <h3>GOPAY</h3>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <p>0895-4225-40345/p>
+                    <p>A/N Suji</p>
+                </div>
+                <div class="status-badge ready">
+                    <i class="fas fa-check-circle"></i> READY
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('0895-4225-40345')">
+                    <i class="far fa-copy"></i> Copy Number
+                </button>
+            </div>
+
+            
+        <div class="contact-section">
+            <h2 class="contact-title">Need Help?</h2>
+            <a href="https://t.me/bidzz7" class="contact-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram-plane"></i>
+                Contact Support
+            </a>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Successfully copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
